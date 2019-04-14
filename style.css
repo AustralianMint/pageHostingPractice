@@ -1,0 +1,55 @@
+#nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+li {
+    float: left;
+    width: 100px;
+    height: 40px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+body {
+    background-image: url(https://c.wallhere.com/photos/e0/c6/minimalism_black_background_photography_street_lamp_street_light_lights_parking_lot-115825.png!d);
+    background-size: cover;
+    background-repeat: none;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid > div {
+    color: white;
+    border: 1px solid white;
+}
+
+.grid > div:nth-child(odd){
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
