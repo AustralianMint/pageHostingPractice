@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hans Ritschard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="grid">
+        <div class="item1">
+            <h1 id="title"></h1>
+            <ul>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </div>
+        <figure class="item2">
+            <img src="/Users/thomasfrey/Documents/pageHostingPractice/attempt1/assests/gustavo-centurion-665623-unsplash.jpg" class="gallery_img">
+        </figure>
+
+        <div class="item3">Paragraph 3</div>
+
+        <div class="item4">
+            <img src="/Users/thomasfrey/Documents/pageHostingPractice/attempt1/assests/chris-barbalis-211599-unsplash.jpg" class="gallery_img">
+        </div>
+        <div class="item5">
+            <img src="/Users/thomasfrey/Documents/pageHostingPractice/attempt1/assests/hin-bong-yeung-210244-unsplash.jpg" class="gallery_img">
+        </div>
+        <div class="item6"></div>
+
+        <div class="item7">
+            <img src="/Users/thomasfrey/Documents/pageHostingPractice/attempt1/assests/36766.jpg" class="gallery_img">
+
+        </div>
+        <div class="item8">
+            <img src="/Users/thomasfrey/Documents/pageHostingPractice/attempt1/assests/36766.jpg" class="gallery_img">
+        </div>
+
+        <div class="item9">Paragraph 9</div>
+
+    </div> 
+
+    <script>
+        // Script to make name typewrite
+        var i = 0;
+        var txt = 'Hans Ritschard';
+        var speed = 150;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+    </script>
+  </body>
+</html>
