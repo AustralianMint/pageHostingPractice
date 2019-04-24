@@ -1,0 +1,50 @@
+a {
+    font-size: 100px;
+
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+li a:hover {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+body {
+    background-color: black;
+    /* background-image: url(https://c.wallhere.com/photos/e0/c6/minimalism_black_background_photography_street_lamp_street_light_lights_parking_lot-115825.png!d);
+    background-size: cover;
+    background-repeat: none; */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5em;
+    margin: 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 12vw);
+    grid-gap: 25px;
+    margin: 50px;
+}
+
+.grid > figure {
+    color: white;
+}
+
+.link > a {
+    font-family: 'Redressed', cursive;
+    text-decoration: none;
+    color: white;
+}
