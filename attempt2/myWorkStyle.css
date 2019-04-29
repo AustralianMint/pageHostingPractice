@@ -1,19 +1,26 @@
-a {
-    font-size: 100px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
+li {
+    float: left;
 }
 
 li a {
     display: block;
+    font-size: 30px;
     text-decoration: none;
     padding: 10px;
     color: white;
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Redressed', cursive;
 }
 
-li a:hover {
-    background-color: rgba(0, 0, 0, 0.2)
+a:hover {
+    color: orange;
 }
 
 body {
@@ -26,21 +33,28 @@ body {
 h1 {
     color: white;
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Redressed', cursive;
     font-size: 5em;
     margin: 0px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 12vw);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 20vw);
     grid-gap: 25px;
     margin: 50px;
 }
 
 .grid > figure {
     color: white;
+    background-color: grey;
+    margin: 5px;
+}
+
+.gallery_item--2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 .link > a {
